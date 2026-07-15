@@ -71,7 +71,7 @@ def test_svg_styler_generation():
     styler = SVGStyleManager(projector, theme)
     
     bg = styler.get_background_svg(1200, 800)
-    assert 'fill="#000000"' in bg
+    assert 'fill="none"' in bg
     
     grid = styler.get_floor_grid_svg()
     assert 'stroke="#ffffff"' in grid
