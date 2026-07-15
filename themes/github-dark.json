@@ -1,0 +1,29 @@
+{
+  "name": "GitHub Dark",
+  "background": "#0D1117",
+  "grid": {
+    "color": "#30363D",
+    "opacity": 0.3,
+    "floor_color": "#30363D",
+    "floor_opacity": 0.1
+  },
+  "building": {
+    "gradient_start": "#39D353",
+    "gradient_end": "#0E4429",
+    "stroke": "#26A641",
+    "stroke_width": 0.5,
+    "opacity": 0.95,
+    "glow_color": "#39D353",
+    "neon_glow": false
+  },
+  "text": {
+    "color": "#8B949E",
+    "accent_color": "#58A6FF",
+    "font_family": "Inter, 'Segoe UI', Helvetica, Arial, sans-serif"
+  },
+  "effects": {
+    "glass_reflection": false,
+    "ambient_shadow": true,
+    "scanline": false
+  }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Skyline Hub | Interactive Dashboard</title>
+  <!-- SEO Metadata -->
+  <meta name="description" content="Explore an interactive, high-fidelity 3D cyberpunk skyline representing GitHub contribution history. Custom themes, streak stats, and downloads.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyberpunk-theme">
+  <!-- Scanline Screen Effect -->
+  <div class="overlay-scanlines"></div>
+
+  <!-- Application Container -->
+  <div class="dashboard-wrapper">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="logo-area">
+        <h1 class="logo-title">GITHUB SKYLINE <span class="accent-text">HUB</span></h1>
+        <p class="logo-subtitle">Interactive 3D Contribution Analytics</p>
+      </div>
+      <div class="status-panel">
+        <div class="status-indicator-pulse"></div>
+        <span class="status-text">SYSTEM: <tspan class="status-ok">ONLINE</tspan></span>
+      </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="dashboard-grid">
+      <!-- Sidebar Control Center -->
+      <section class="control-panel glass-card">
+        <div class="panel-header">
+          <h2>DATABASE SELECTOR</h2>
+        </div>
+        
+        <!-- User Selection card -->
+        <div class="user-identity-card">
+          <div class="avatar-placeholder" id="user-avatar-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+          </div>
+          <div class="user-meta">
+            <span class="user-label">CONTRIBUTOR</span>
+            <span class="user-value" id="stats-username">@DURGESH729</span>
+          </div>
+        </div>
+
+        <!-- Year Options -->
+        <div class="form-group">
+          <label for="year-select">TARGET YEAR</label>
+          <select id="year-select" class="cyber-select">
+            <option value="current">Current Year</option>
+            <option value="animated">Current Year (Animated)</option>
+            <option value="all">Cumulative (All Years)</option>
+          </select>
+        </div>
+
+        <!-- Theme Options -->
+        <div class="form-group">
+          <label for="theme-select">AVAILABLE THEMES</label>
+          <select id="theme-select" class="cyber-select" disabled>
+            <!-- Dynamic themes will be loaded here -->
+            <option value="">Detecting Themes...</option>
+          </select>
+        </div>
+
+        <div class="stats-board-vertical">
+          <!-- Total Contributions -->
+          <div class="stat-widget">
+            <span class="stat-label">TOTAL CONTRIBUTIONS</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-cyan-text" id="stats-total">0</span>
+            </div>
+          </div>
+
+          <!-- Longest Streak -->
+          <div class="stat-widget">
+            <span class="stat-label">LONGEST STREAK</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-purple-text" id="stats-longest">0</span>
+              <span class="stat-unit">days</span>
+            </div>
+          </div>
+
+          <!-- Current Streak -->
+          <div class="stat-widget">
+            <span class="stat-label">CURRENT STREAK</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-pink-text" id="stats-current">0</span>
+              <span class="stat-unit">days</span>
+            </div>
+          </div>
+
+          <!-- Repositories -->
+          <div class="stat-widget">
+            <span class="stat-label">REPOSITORIES</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-blue-text" id="stats-repos">0</span>
+            </div>
+          </div>
+
+          <!-- Divider / Header for AI Insights -->
+          <div class="panel-header" style="margin-top: 15px; padding: 6px 0; border-bottom: 1px solid var(--border-color); background: none;">
+            <h2>AI INSIGHTS & ANALYTICS</h2>
+          </div>
+
+          <!-- Productivity Score -->
+          <div class="stat-widget">
+            <span class="stat-label">PRODUCTIVITY SCORE</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-pink-text" id="ai-score">0</span>
+              <span class="stat-unit">/ 100</span>
+            </div>
+          </div>
+
+          <!-- Best Month -->
+          <div class="stat-widget">
+            <span class="stat-label">BEST MONTH</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-cyan-text" style="font-size: 15px; word-break: break-all;" id="ai-best-month">N/A</span>
+            </div>
+          </div>
+
+          <!-- Most Productive Weekday -->
+          <div class="stat-widget">
+            <span class="stat-label">MOST PRODUCTIVE WEEKDAY</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-purple-text" style="font-size: 18px;" id="ai-best-weekday">N/A</span>
+            </div>
+          </div>
+
+          <!-- Most Productive Month -->
+          <div class="stat-widget">
+            <span class="stat-label">MOST PRODUCTIVE MONTH</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-blue-text" style="font-size: 18px;" id="ai-best-month-name">N/A</span>
+            </div>
+          </div>
+
+          <!-- YoY Growth -->
+          <div class="stat-widget">
+            <span class="stat-label">YOY GROWTH</span>
+            <div class="stat-number-wrapper">
+              <span class="stat-number neon-cyan-text" style="font-size: 16px; word-break: break-all;" id="ai-yoy-growth">N/A</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SVG Viewport Center -->
+      <section class="viewer-panel glass-card" id="fullscreen-target">
+        <div class="panel-header viewer-header">
+          <h2>SKYLINE GRAPHICS MATRIX</h2>
+          <div class="viewer-actions">
+            <button id="btn-zoom-in" title="Zoom In" class="cyber-btn-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <button id="btn-zoom-out" title="Zoom Out" class="cyber-btn-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M19 13H5v-2h14v2z"/>
+              </svg>
+            </button>
+            <button id="btn-zoom-reset" title="Reset View" class="cyber-btn-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 14H11V11H8V9h5z"/>
+              </svg>
+            </button>
+            <button id="btn-fullscreen" title="Toggle Fullscreen" class="cyber-btn-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- SVG Container -->
+        <div class="viewport-canvas" id="viewport-canvas-container">
+          <div class="viewport-loading" id="viewport-spinner">
+            <div class="cyber-spinner"></div>
+            <span>DECRYPTING Contribution Matrix...</span>
+          </div>
+          <!-- Target container for dynamic SVG loading -->
+          <div id="svg-render-area" class="render-svg-wrapper"></div>
+        </div>
+
+        <!-- Canvas for PNG Export (Hidden) -->
+        <canvas id="export-canvas" style="display:none;"></canvas>
+
+        <!-- Downloader HUD -->
+        <div class="downloader-hud">
+          <button class="cyber-btn btn-cyan" id="btn-download-svg">
+            <span class="btn-glitch-text">EXPORT .SVG</span>
+          </button>
+          <button class="cyber-btn btn-purple" id="btn-download-png">
+            <span class="btn-glitch-text">EXPORT .PNG</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Status -->
+    <footer class="main-footer">
+      <div class="footer-segment">
+        <span class="hud-term">PROJECT_LOC:</span>
+        <span class="hud-value">GITHUB PAGES // PORT 443</span>
+      </div>
+      <div class="footer-segment">
+        <span class="hud-term">LAST_COMPILATION:</span>
+        <span class="hud-value" id="stats-updated">N/A</span>
+      </div>
+      <div class="footer-segment">
+        <span>© 2026 ANTIGRAVITY ENGINE. ALL RIGHTS SECURED.</span>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

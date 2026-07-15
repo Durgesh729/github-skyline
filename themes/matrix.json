@@ -1,0 +1,29 @@
+{
+  "name": "Matrix",
+  "background": "#000000",
+  "grid": {
+    "color": "#00FF00",
+    "opacity": 0.1,
+    "floor_color": "#00FF00",
+    "floor_opacity": 0.15
+  },
+  "building": {
+    "gradient_start": "#00FF00",
+    "gradient_end": "#003300",
+    "stroke": "#00FF00",
+    "stroke_width": 0.7,
+    "opacity": 0.9,
+    "glow_color": "#00FF00",
+    "neon_glow": true
+  },
+  "text": {
+    "color": "#00FF00",
+    "accent_color": "#00FF00",
+    "font_family": "'JetBrains Mono', Consolas, monospace"
+  },
+  "effects": {
+    "glass_reflection": true,
+    "ambient_shadow": false,
+    "scanline": true
+  }
+}

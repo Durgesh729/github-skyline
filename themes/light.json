@@ -1,0 +1,29 @@
+{
+  "name": "Light Modern",
+  "background": "#F8FAFC",
+  "grid": {
+    "color": "#E2E8F0",
+    "opacity": 0.8,
+    "floor_color": "#CBD5E1",
+    "floor_opacity": 0.5
+  },
+  "building": {
+    "gradient_start": "#3B82F6",
+    "gradient_end": "#1E3A8A",
+    "stroke": "#1D4ED8",
+    "stroke_width": 0.5,
+    "opacity": 0.85,
+    "glow_color": "#3B82F6",
+    "neon_glow": false
+  },
+  "text": {
+    "color": "#475569",
+    "accent_color": "#1E293B",
+    "font_family": "Inter, 'Segoe UI', Helvetica, Arial, sans-serif"
+  },
+  "effects": {
+    "glass_reflection": true,
+    "ambient_shadow": true,
+    "scanline": false
+  }
+}

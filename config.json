@@ -1,0 +1,27 @@
+{
+  "username": "Durgesh729",
+  "theme": "cyberpunk",
+  "output_dir": "assets",
+  "docs_dir": "docs",
+  "github_pages_url": "https://Durgesh729.github.io/github-skyline/",
+  "svg_settings": {
+    "width": 1200,
+    "height": 800,
+    "columns": 53,
+    "rows": 7,
+    "height_scale": 15.0,
+    "max_building_height": 180,
+    "min_building_height": 5,
+    "grid_spacing": 20,
+    "perspective_angle": 30,
+    "show_grid": true,
+    "show_text": true
+  },
+  "animation_settings": {
+    "enabled": true,
+    "duration_seconds": 3.0,
+    "delay_increment_seconds": 0.01,
+    "pulse_glow": true,
+    "scanline": true
+  }
+}

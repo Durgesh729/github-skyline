@@ -1,0 +1,1895 @@
+[
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/swap",
+    "owner": "https://github.com/Durgesh729",
+    "name": "swap",
+    "description": "Recomandation of the product cost by identifying the lowest price",
+    "website": "",
+    "private": false,
+    "has_issues": false,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2025-04-25T14:00:19Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2025-04-25T14:00:20Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/swap/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2025-04-25T14:00:20Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2025-04-25T14:00:17Z",
+    "git_url": "tarball://root/repositories/Durgesh729/swap.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Project-Review-System",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Project-Review-System",
+    "description": "Enabling mentors, mentees, HODs and coordinators to collaborate seamlessly with cutting-edge technology and intuitive design.",
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-01-17T04:23:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-01-17T04:23:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-01-17T04:23:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-01-17T04:23:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-01-17T04:23:08Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-01-17T04:23:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-01-17T04:23:08Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-01-17T04:23:08Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Project-Review-System/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-01-17T04:23:08Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-01-17T04:23:05Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Project-Review-System.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning",
+    "owner": "https://github.com/Durgesh729",
+    "name": "AI-that-detect-Dataset-Poisoning",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-03-15T04:41:06Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/AI-that-detect-Dataset-Poisoning/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-03-15T04:41:06Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-03-15T04:41:04Z",
+    "git_url": "tarball://root/repositories/Durgesh729/AI-that-detect-Dataset-Poisoning.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Coding",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Coding",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-05T11:13:15Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-05T11:13:15Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-05T11:13:16Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-05T11:13:16Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-05T11:13:16Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-05T11:13:16Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-05T11:13:16Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-05T11:13:16Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Coding/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-05T11:13:16Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-05T11:13:12Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Coding.git",
+    "default_branch": "master",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/assignment2",
+    "owner": "https://github.com/Durgesh729",
+    "name": "assignment2",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-05T15:26:25Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-05T15:26:26Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment2/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-05T15:26:26Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-05T15:26:22Z",
+    "git_url": "tarball://root/repositories/Durgesh729/assignment2.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/assignment3",
+    "owner": "https://github.com/Durgesh729",
+    "name": "assignment3",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-11T05:43:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/assignment3/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-11T05:43:07Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-11T05:43:04Z",
+    "git_url": "tarball://root/repositories/Durgesh729/assignment3.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Numpy-Basic",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Numpy-Basic",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-14T05:01:52Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Numpy-Basic/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-14T05:01:52Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-14T05:01:48Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Numpy-Basic.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Pandas",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Pandas",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-18T06:51:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Pandas/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-18T06:51:07Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-18T06:51:04Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Pandas.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Github-CICD-Storage",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Github-CICD-Storage",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-22T12:16:21Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Github-CICD-Storage/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-22T12:16:21Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-22T12:16:17Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Github-CICD-Storage.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Python-Daily",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Python-Daily",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-22T12:26:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Python-Daily/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-22T12:26:59Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-06-22T12:26:55Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Python-Daily.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Loan-Approval",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Loan-Approval",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-06-27T15:18:07Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Loan-Approval/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-06-27T15:18:08Z"
+      }
+    ],
+    "collaborators": [
+      {
+        "user": "https://github.com/CodexxNinja",
+        "permission": "write"
+      }
+    ],
+    "created_at": "2026-06-27T15:18:05Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Loan-Approval.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Multi-Tier-Academic-Workflow-with-RBAC",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-07-04T14:16:58Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-07-04T14:16:58Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-07-04T14:16:58Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-07-04T14:16:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-07-04T14:16:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-07-04T14:16:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-07-04T14:16:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-07-04T14:16:59Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-07-04T14:16:59Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-07-04T14:16:56Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Multi-Tier-Academic-Workflow-with-RBAC.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Smart-Buisiness-Analytics",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-07-04T14:22:53Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-07-04T14:22:54Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Smart-Buisiness-Analytics/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-07-04T14:22:54Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-07-04T14:22:51Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Smart-Buisiness-Analytics.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Portfolio",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Portfolio",
+    "description": null,
+    "website": "https://portfolio-wine-nine-84.vercel.app",
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-07-06T09:51:31Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-07-06T09:51:32Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Portfolio/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-07-06T09:51:32Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-07-06T09:51:29Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Portfolio.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/Durgesh729",
+    "owner": "https://github.com/Durgesh729",
+    "name": "Durgesh729",
+    "description": null,
+    "website": null,
+    "private": false,
+    "has_issues": true,
+    "has_wiki": true,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-07-07T05:18:42Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/Durgesh729/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-07-07T05:18:42Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-07-07T05:18:38Z",
+    "git_url": "tarball://root/repositories/Durgesh729/Durgesh729.git",
+    "default_branch": "main",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  },
+  {
+    "type": "repository",
+    "url": "https://github.com/Durgesh729/github-readme-stats",
+    "owner": "https://github.com/Durgesh729",
+    "name": "github-readme-stats",
+    "description": ":zap: Dynamically generated stats for your github readmes",
+    "website": "https://github-readme-stats.vercel.app",
+    "private": false,
+    "has_issues": false,
+    "has_wiki": false,
+    "has_downloads": true,
+    "is_archived": false,
+    "labels": [
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "description": "Improvements or additions to documentation",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description": "This issue or pull request already exists",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description": "New feature or request",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "description": "Extra attention is needed",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "description": "Further information is requested",
+        "created_at": "2026-07-13T06:47:51Z"
+      },
+      {
+        "url": "https://github.com/Durgesh729/github-readme-stats/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description": "This will not be worked on",
+        "created_at": "2026-07-13T06:47:51Z"
+      }
+    ],
+    "collaborators": [],
+    "created_at": "2026-07-13T06:47:48Z",
+    "git_url": "tarball://root/repositories/Durgesh729/github-readme-stats.git",
+    "default_branch": "master",
+    "webhooks": [],
+    "page": null,
+    "public_keys": [],
+    "repository_topics": [],
+    "security_and_analysis": {
+      "dependency_graph": false,
+      "vulnerability_alerts": false,
+      "vulnerability_updates": false,
+      "advanced_security": false,
+      "token_scanning": true,
+      "token_scanning_push_protection": true
+    },
+    "autolinks": [],
+    "general_settings": {
+      "template": false,
+      "allow_forking": true,
+      "sponsorships": false,
+      "projects": true,
+      "discussions": false,
+      "merge_commit": true,
+      "squash_merge": true,
+      "rebase_merge": true,
+      "auto_merge": false,
+      "delete_branch_heads": false,
+      "update_branch": false,
+      "git_lfs_in_archives": false
+    },
+    "actions_general_settings": {
+      "actions_disabled": false,
+      "allows_all_actions": true,
+      "allows_local_actions_only": false,
+      "allows_github_owned_actions": false,
+      "allows_verified_actions": false,
+      "allows_specific_actions_patterns": false,
+      "patterns": []
+    }
+  }
+]

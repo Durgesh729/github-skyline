@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <style type="text/css"><![CDATA[
+    .dashboard-text {
+      font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .code-text {
+      font-family: "JetBrains Mono", Consolas, monospace;
+    }
+    .building-face {
+      stroke-linejoin: round;
+      transition: all 0.3s ease;
+    }
+    path[fill="url(#top-face-gradient)"] {
+      stroke: #4cf4ff;
+      stroke-width: 0.8px;
+    }
+    path[fill="url(#left-face-gradient)"] {
+      stroke: #00F0FF;
+      stroke-opacity: 0.7;
+    }
+    path[fill="url(#right-face-gradient)"] {
+      stroke: #00c0cc;
+      stroke-opacity: 0.6;
+    }
+  ]]></style>
+
+  <defs>
+
+    <linearGradient id="left-face-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#234e93" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#3B82F6" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="right-face-gradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#173462" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#2f68c4" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#00c0cc" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="top-face-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#66f6ff" stop-opacity="0.98" />
+    </linearGradient>
+
+    <linearGradient id="reflection-gradient-left" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="reflection-gradient-right" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00c0cc" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#2f68c4" stop-opacity="0.0" />
+    </linearGradient>
+
+    <filter id="ambient-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.0" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <radialGradient id="bg-vignette" cx="50%" cy="48%" r="72%">
+      <stop offset="30%" stop-color="#0D1117" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.09" />
+    </radialGradient>
+
+    <linearGradient id="bg-vertical-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.018" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.022" />
+    </linearGradient>
+
+    <radialGradient id="floor-ambient-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="skyline-bloom" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feComposite in="blur" in2="SourceGraphic" operator="over" />
+    </filter>
+
+    <filter id="bg-noise" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise" />
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise" />
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended" />
+      <feComposite in="blended" in2="SourceGraphic" operator="in" />
+    </filter>
+
+    <radialGradient id="grid-fade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1.0" />
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </radialGradient>
+    <mask id="grid-mask">
+      <rect width="100%" height="100%" fill="url(#grid-fade)" />
+    </mask>
+
+    <linearGradient id="laser-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0" />
+      <stop offset="15%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="85%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="legend-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#00F0FF" />
+    </linearGradient>
+  </defs>
+  <!-- Background: transparent canvas -->
+  <rect id="bg-base" width="1200" height="800" fill="none" />
+  <!-- Vertical light gradient -->
+  <rect width="1200" height="800" fill="url(#bg-vertical-grad)" />
+  <!-- Radial vignette -->
+  <rect width="1200" height="800" fill="url(#bg-vignette)" />
+  <!-- Ambient skyline bloom -->
+  <ellipse cx="600.0" cy="496.0" rx="456.0" ry="128.0" fill="url(#floor-ambient-glow)" opacity="1" />
+
+  <g id="skyline-scene" transform="translate(39.5, 17.13) scale(0.9342)">
+  <ellipse cx="600.0" cy="450.0" rx="450" ry="180" fill="url(#floor-ambient-glow)" />
+  <path class="floor-grid" d="M 201.63,150.0 L 1119.62,680.0 M 184.31,160.0 L 1102.29,690.0 M 166.99,170.0 L 1084.97,700.0 M 149.67,180.0 L 1067.65,710.0 M 132.35,190.0 L 1050.33,720.0 M 115.03,200.0 L 1033.01,730.0 M 97.71,210.0 L 1015.69,740.0 M 80.38,220.0 L 998.37,750.0 M 201.63,150.0 L 80.38,220.0 M 218.95,160.0 L 97.71,230.0 M 236.27,170.0 L 115.03,240.0 M 253.59,180.0 L 132.35,250.0 M 270.91,190.0 L 149.67,260.0 M 288.23,200.0 L 166.99,270.0 M 305.55,210.0 L 184.31,280.0 M 322.87,220.0 L 201.63,290.0 M 340.19,230.0 L 218.95,300.0 M 357.51,240.0 L 236.27,310.0 M 374.83,250.0 L 253.59,320.0 M 392.15,260.0 L 270.91,330.0 M 409.47,270.0 L 288.23,340.0 M 426.79,280.0 L 305.55,350.0 M 444.12,290.0 L 322.87,360.0 M 461.44,300.0 L 340.19,370.0 M 478.76,310.0 L 357.51,380.0 M 496.08,320.0 L 374.83,390.0 M 513.4,330.0 L 392.15,400.0 M 530.72,340.0 L 409.47,410.0 M 548.04,350.0 L 426.79,420.0 M 565.36,360.0 L 444.12,430.0 M 582.68,370.0 L 461.44,440.0 M 600.0,380.0 L 478.76,450.0 M 617.32,390.0 L 496.08,460.0 M 634.64,400.0 L 513.4,470.0 M 651.96,410.0 L 530.72,480.0 M 669.28,420.0 L 548.04,490.0 M 686.6,430.0 L 565.36,500.0 M 703.92,440.0 L 582.68,510.0 M 721.24,450.0 L 600.0,520.0 M 738.56,460.0 L 617.32,530.0 M 755.88,470.0 L 634.64,540.0 M 773.21,480.0 L 651.96,550.0 M 790.53,490.0 L 669.28,560.0 M 807.85,500.0 L 686.6,570.0 M 825.17,510.0 L 703.92,580.0 M 842.49,520.0 L 721.24,590.0 M 859.81,530.0 L 738.56,600.0 M 877.13,540.0 L 755.88,610.0 M 894.45,550.0 L 773.21,620.0 M 911.77,560.0 L 790.53,630.0 M 929.09,570.0 L 807.85,640.0 M 946.41,580.0 L 825.17,650.0 M 963.73,590.0 L 842.49,660.0 M 981.05,600.0 L 859.81,670.0 M 998.37,610.0 L 877.13,680.0 M 1015.69,620.0 L 894.45,690.0 M 1033.01,630.0 L 911.77,700.0 M 1050.33,640.0 L 929.09,710.0 M 1067.65,650.0 L 946.41,720.0 M 1084.97,660.0 L 963.73,730.0 M 1102.29,670.0 L 981.05,740.0 M 1119.62,680.0 L 998.37,750.0" fill="none" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1.0" filter="url(#neon-glow)" mask="url(#grid-mask)" />
+
+  <!-- Reflections -->
+  <path d="M 152.78,200.0 L 152.78,206.75 L 166.99,214.95 L 166.99,208.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 166.99,208.2 L 166.99,214.95 L 181.19,206.75 L 181.19,200.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 118.14,240.0 L 118.14,260.25 L 132.35,268.45 L 132.35,248.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 132.35,248.2 L 132.35,268.45 L 146.55,260.25 L 146.55,240.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 377.95,270.0 L 377.95,303.75 L 392.15,311.95 L 392.15,278.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 392.15,278.2 L 392.15,311.95 L 406.36,303.75 L 406.36,270.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 325.99,340.0 L 325.99,346.75 L 340.19,354.95 L 340.19,348.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 340.19,348.2 L 340.19,354.95 L 354.4,346.75 L 354.4,340.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 412.59,350.0 L 412.59,356.75 L 426.79,364.95 L 426.79,358.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 426.79,358.2 L 426.79,364.95 L 441.0,356.75 L 441.0,350.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 603.12,400.0 L 603.12,413.5 L 617.32,421.7 L 617.32,408.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 617.32,408.2 L 617.32,421.7 L 631.52,413.5 L 631.52,400.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 568.48,420.0 L 568.48,440.25 L 582.68,448.45 L 582.68,428.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 582.68,428.2 L 582.68,448.45 L 596.88,440.25 L 596.88,420.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 603.12,420.0 L 603.12,467.25 L 617.32,475.45 L 617.32,428.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 617.32,428.2 L 617.32,475.45 L 631.52,467.25 L 631.52,420.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 637.76,420.0 L 637.76,426.75 L 651.96,434.95 L 651.96,428.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 651.96,428.2 L 651.96,434.95 L 666.16,426.75 L 666.16,420.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 481.87,430.0 L 481.87,457.0 L 496.08,465.2 L 496.08,438.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 496.08,438.2 L 496.08,465.2 L 510.28,457.0 L 510.28,430.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 516.52,430.0 L 516.52,443.5 L 530.72,451.7 L 530.72,438.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 530.72,438.2 L 530.72,451.7 L 544.92,443.5 L 544.92,430.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 585.8,430.0 L 585.8,436.75 L 600.0,444.95 L 600.0,438.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 600.0,438.2 L 600.0,444.95 L 614.2,436.75 L 614.2,430.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 620.44,430.0 L 620.44,443.5 L 634.64,451.7 L 634.64,438.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 634.64,438.2 L 634.64,451.7 L 648.84,443.5 L 648.84,430.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 655.08,430.0 L 655.08,436.75 L 669.28,444.95 L 669.28,438.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 669.28,438.2 L 669.28,444.95 L 683.48,436.75 L 683.48,430.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 533.84,440.0 L 533.84,453.5 L 548.04,461.7 L 548.04,448.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 548.04,448.2 L 548.04,461.7 L 562.24,453.5 L 562.24,440.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 568.48,440.0 L 568.48,446.75 L 582.68,454.95 L 582.68,448.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 582.68,448.2 L 582.68,454.95 L 596.88,446.75 L 596.88,440.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 603.12,440.0 L 603.12,446.75 L 617.32,454.95 L 617.32,448.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 617.32,448.2 L 617.32,454.95 L 631.52,446.75 L 631.52,440.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 637.76,440.0 L 637.76,467.0 L 651.96,475.2 L 651.96,448.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 651.96,448.2 L 651.96,475.2 L 666.16,467.0 L 666.16,440.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 672.4,440.0 L 672.4,521.0 L 686.6,529.2 L 686.6,448.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 686.6,448.2 L 686.6,529.2 L 700.81,521.0 L 700.81,440.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 551.16,450.0 L 551.16,456.75 L 565.36,464.95 L 565.36,458.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 565.36,458.2 L 565.36,464.95 L 579.56,456.75 L 579.56,450.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 585.8,450.0 L 585.8,463.5 L 600.0,471.7 L 600.0,458.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 600.0,458.2 L 600.0,471.7 L 614.2,463.5 L 614.2,450.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 620.44,450.0 L 620.44,483.75 L 634.64,491.95 L 634.64,458.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 634.64,458.2 L 634.64,491.95 L 648.84,483.75 L 648.84,450.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 655.08,450.0 L 655.08,510.75 L 669.28,518.95 L 669.28,458.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 669.28,458.2 L 669.28,518.95 L 683.48,510.75 L 683.48,450.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 499.19,460.0 L 499.19,480.25 L 513.4,488.45 L 513.4,468.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 513.4,468.2 L 513.4,488.45 L 527.6,480.25 L 527.6,460.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 533.84,460.0 L 533.84,466.75 L 548.04,474.95 L 548.04,468.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 548.04,468.2 L 548.04,474.95 L 562.24,466.75 L 562.24,460.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 568.48,460.0 L 568.48,466.75 L 582.68,474.95 L 582.68,468.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 582.68,468.2 L 582.68,474.95 L 596.88,466.75 L 596.88,460.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 603.12,460.0 L 603.12,541.0 L 617.32,549.2 L 617.32,468.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 617.32,468.2 L 617.32,549.2 L 631.52,541.0 L 631.52,460.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 637.76,460.0 L 637.76,541.0 L 651.96,549.2 L 651.96,468.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 651.96,468.2 L 651.96,549.2 L 666.16,541.0 L 666.16,460.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 516.52,470.0 L 516.52,490.25 L 530.72,498.45 L 530.72,478.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 530.72,478.2 L 530.72,498.45 L 544.92,490.25 L 544.92,470.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 551.16,470.0 L 551.16,483.5 L 565.36,491.7 L 565.36,478.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 565.36,478.2 L 565.36,491.7 L 579.56,483.5 L 579.56,470.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 585.8,470.0 L 585.8,476.75 L 600.0,484.95 L 600.0,478.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 600.0,478.2 L 600.0,484.95 L 614.2,476.75 L 614.2,470.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 533.84,480.0 L 533.84,513.75 L 548.04,521.95 L 548.04,488.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 548.04,488.2 L 548.04,521.95 L 562.24,513.75 L 562.24,480.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 568.48,480.0 L 568.48,534.0 L 582.68,542.2 L 582.68,488.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 582.68,488.2 L 582.68,542.2 L 596.88,534.0 L 596.88,480.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 551.16,490.0 L 551.16,496.75 L 565.36,504.95 L 565.36,498.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 565.36,498.2 L 565.36,504.95 L 579.56,496.75 L 579.56,490.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <!-- Ground Shadows -->
+  <path d="M 166.99,194.8 L 152.78,203.0 L 166.99,211.2 L 181.19,203.0 Z M 132.35,234.8 L 118.14,243.0 L 132.35,251.2 L 146.55,243.0 Z M 392.15,264.8 L 377.95,273.0 L 392.15,281.2 L 406.36,273.0 Z M 340.19,334.8 L 325.99,343.0 L 340.19,351.2 L 354.4,343.0 Z M 426.79,344.8 L 412.59,353.0 L 426.79,361.2 L 441.0,353.0 Z M 617.32,394.8 L 603.12,403.0 L 617.32,411.2 L 631.52,403.0 Z M 582.68,414.8 L 568.48,423.0 L 582.68,431.2 L 596.88,423.0 Z M 617.32,414.8 L 603.12,423.0 L 617.32,431.2 L 631.52,423.0 Z M 651.96,414.8 L 637.76,423.0 L 651.96,431.2 L 666.16,423.0 Z M 496.08,424.8 L 481.87,433.0 L 496.08,441.2 L 510.28,433.0 Z M 530.72,424.8 L 516.52,433.0 L 530.72,441.2 L 544.92,433.0 Z M 600.0,424.8 L 585.8,433.0 L 600.0,441.2 L 614.2,433.0 Z M 634.64,424.8 L 620.44,433.0 L 634.64,441.2 L 648.84,433.0 Z M 669.28,424.8 L 655.08,433.0 L 669.28,441.2 L 683.48,433.0 Z M 548.04,434.8 L 533.84,443.0 L 548.04,451.2 L 562.24,443.0 Z M 582.68,434.8 L 568.48,443.0 L 582.68,451.2 L 596.88,443.0 Z M 617.32,434.8 L 603.12,443.0 L 617.32,451.2 L 631.52,443.0 Z M 651.96,434.8 L 637.76,443.0 L 651.96,451.2 L 666.16,443.0 Z M 686.6,434.8 L 672.4,443.0 L 686.6,451.2 L 700.81,443.0 Z M 565.36,444.8 L 551.16,453.0 L 565.36,461.2 L 579.56,453.0 Z M 600.0,444.8 L 585.8,453.0 L 600.0,461.2 L 614.2,453.0 Z M 634.64,444.8 L 620.44,453.0 L 634.64,461.2 L 648.84,453.0 Z M 669.28,444.8 L 655.08,453.0 L 669.28,461.2 L 683.48,453.0 Z M 513.4,454.8 L 499.19,463.0 L 513.4,471.2 L 527.6,463.0 Z M 548.04,454.8 L 533.84,463.0 L 548.04,471.2 L 562.24,463.0 Z M 582.68,454.8 L 568.48,463.0 L 582.68,471.2 L 596.88,463.0 Z M 617.32,454.8 L 603.12,463.0 L 617.32,471.2 L 631.52,463.0 Z M 651.96,454.8 L 637.76,463.0 L 651.96,471.2 L 666.16,463.0 Z M 530.72,464.8 L 516.52,473.0 L 530.72,481.2 L 544.92,473.0 Z M 565.36,464.8 L 551.16,473.0 L 565.36,481.2 L 579.56,473.0 Z M 600.0,464.8 L 585.8,473.0 L 600.0,481.2 L 614.2,473.0 Z M 548.04,474.8 L 533.84,483.0 L 548.04,491.2 L 562.24,483.0 Z M 582.68,474.8 L 568.48,483.0 L 582.68,491.2 L 596.88,483.0 Z M 565.36,484.8 L 551.16,493.0 L 565.36,501.2 L 579.56,493.0 Z" fill="#000000" filter="url(#ambient-shadow)" opacity="0.6" />
+  <!-- Isometric Buildings -->
+  <g>
+    <path class="building-face" d="M 152.78,200.0 L 152.78,185.0 L 166.99,193.2 L 166.99,208.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 166.99,208.2 L 166.99,193.2 L 181.19,185.0 L 181.19,200.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 166.99,176.8 L 152.78,185.0 L 166.99,193.2 L 181.19,185.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 118.14,240.0 L 118.14,195.0 L 132.35,203.2 L 132.35,248.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 132.35,248.2 L 132.35,203.2 L 146.55,195.0 L 146.55,240.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 132.35,186.8 L 118.14,195.0 L 132.35,203.2 L 146.55,195.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 377.95,270.0 L 377.95,195.0 L 392.15,203.2 L 392.15,278.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 392.15,278.2 L 392.15,203.2 L 406.36,195.0 L 406.36,270.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 392.15,186.8 L 377.95,195.0 L 392.15,203.2 L 406.36,195.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 325.99,340.0 L 325.99,325.0 L 340.19,333.2 L 340.19,348.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 340.19,348.2 L 340.19,333.2 L 354.4,325.0 L 354.4,340.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 340.19,316.8 L 325.99,325.0 L 340.19,333.2 L 354.4,325.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 412.59,350.0 L 412.59,335.0 L 426.79,343.2 L 426.79,358.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 426.79,358.2 L 426.79,343.2 L 441.0,335.0 L 441.0,350.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 426.79,326.8 L 412.59,335.0 L 426.79,343.2 L 441.0,335.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 603.12,400.0 L 603.12,370.0 L 617.32,378.2 L 617.32,408.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,408.2 L 617.32,378.2 L 631.52,370.0 L 631.52,400.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,361.8 L 603.12,370.0 L 617.32,378.2 L 631.52,370.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 568.48,420.0 L 568.48,375.0 L 582.68,383.2 L 582.68,428.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,428.2 L 582.68,383.2 L 596.88,375.0 L 596.88,420.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,366.8 L 568.48,375.0 L 582.68,383.2 L 596.88,375.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 603.12,420.0 L 603.12,315.0 L 617.32,323.2 L 617.32,428.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,428.2 L 617.32,323.2 L 631.52,315.0 L 631.52,420.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,306.8 L 603.12,315.0 L 617.32,323.2 L 631.52,315.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 637.76,420.0 L 637.76,405.0 L 651.96,413.2 L 651.96,428.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 651.96,428.2 L 651.96,413.2 L 666.16,405.0 L 666.16,420.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 651.96,396.8 L 637.76,405.0 L 651.96,413.2 L 666.16,405.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 481.87,430.0 L 481.87,370.0 L 496.08,378.2 L 496.08,438.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 496.08,438.2 L 496.08,378.2 L 510.28,370.0 L 510.28,430.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 496.08,361.8 L 481.87,370.0 L 496.08,378.2 L 510.28,370.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 516.52,430.0 L 516.52,400.0 L 530.72,408.2 L 530.72,438.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 530.72,438.2 L 530.72,408.2 L 544.92,400.0 L 544.92,430.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 530.72,391.8 L 516.52,400.0 L 530.72,408.2 L 544.92,400.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 585.8,430.0 L 585.8,415.0 L 600.0,423.2 L 600.0,438.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 600.0,438.2 L 600.0,423.2 L 614.2,415.0 L 614.2,430.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 600.0,406.8 L 585.8,415.0 L 600.0,423.2 L 614.2,415.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 620.44,430.0 L 620.44,400.0 L 634.64,408.2 L 634.64,438.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 634.64,438.2 L 634.64,408.2 L 648.84,400.0 L 648.84,430.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 634.64,391.8 L 620.44,400.0 L 634.64,408.2 L 648.84,400.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 655.08,430.0 L 655.08,415.0 L 669.28,423.2 L 669.28,438.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 669.28,438.2 L 669.28,423.2 L 683.48,415.0 L 683.48,430.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 669.28,406.8 L 655.08,415.0 L 669.28,423.2 L 683.48,415.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 533.84,440.0 L 533.84,410.0 L 548.04,418.2 L 548.04,448.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 548.04,448.2 L 548.04,418.2 L 562.24,410.0 L 562.24,440.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 548.04,401.8 L 533.84,410.0 L 548.04,418.2 L 562.24,410.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 568.48,440.0 L 568.48,425.0 L 582.68,433.2 L 582.68,448.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,448.2 L 582.68,433.2 L 596.88,425.0 L 596.88,440.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,416.8 L 568.48,425.0 L 582.68,433.2 L 596.88,425.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 603.12,440.0 L 603.12,425.0 L 617.32,433.2 L 617.32,448.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,448.2 L 617.32,433.2 L 631.52,425.0 L 631.52,440.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,416.8 L 603.12,425.0 L 617.32,433.2 L 631.52,425.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 637.76,440.0 L 637.76,380.0 L 651.96,388.2 L 651.96,448.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 651.96,448.2 L 651.96,388.2 L 666.16,380.0 L 666.16,440.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 651.96,371.8 L 637.76,380.0 L 651.96,388.2 L 666.16,380.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 672.4,440.0 L 672.4,260.0 L 686.6,268.2 L 686.6,448.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 686.6,448.2 L 686.6,268.2 L 700.81,260.0 L 700.81,440.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 686.6,251.8 L 672.4,260.0 L 686.6,268.2 L 700.81,260.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 551.16,450.0 L 551.16,435.0 L 565.36,443.2 L 565.36,458.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 565.36,458.2 L 565.36,443.2 L 579.56,435.0 L 579.56,450.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 565.36,426.8 L 551.16,435.0 L 565.36,443.2 L 579.56,435.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 585.8,450.0 L 585.8,420.0 L 600.0,428.2 L 600.0,458.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 600.0,458.2 L 600.0,428.2 L 614.2,420.0 L 614.2,450.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 600.0,411.8 L 585.8,420.0 L 600.0,428.2 L 614.2,420.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 620.44,450.0 L 620.44,375.0 L 634.64,383.2 L 634.64,458.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 634.64,458.2 L 634.64,383.2 L 648.84,375.0 L 648.84,450.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 634.64,366.8 L 620.44,375.0 L 634.64,383.2 L 648.84,375.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 655.08,450.0 L 655.08,315.0 L 669.28,323.2 L 669.28,458.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 669.28,458.2 L 669.28,323.2 L 683.48,315.0 L 683.48,450.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 669.28,306.8 L 655.08,315.0 L 669.28,323.2 L 683.48,315.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 499.19,460.0 L 499.19,415.0 L 513.4,423.2 L 513.4,468.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 513.4,468.2 L 513.4,423.2 L 527.6,415.0 L 527.6,460.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 513.4,406.8 L 499.19,415.0 L 513.4,423.2 L 527.6,415.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 533.84,460.0 L 533.84,445.0 L 548.04,453.2 L 548.04,468.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 548.04,468.2 L 548.04,453.2 L 562.24,445.0 L 562.24,460.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 548.04,436.8 L 533.84,445.0 L 548.04,453.2 L 562.24,445.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 568.48,460.0 L 568.48,445.0 L 582.68,453.2 L 582.68,468.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,468.2 L 582.68,453.2 L 596.88,445.0 L 596.88,460.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,436.8 L 568.48,445.0 L 582.68,453.2 L 596.88,445.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 603.12,460.0 L 603.12,280.0 L 617.32,288.2 L 617.32,468.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,468.2 L 617.32,288.2 L 631.52,280.0 L 631.52,460.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 617.32,271.8 L 603.12,280.0 L 617.32,288.2 L 631.52,280.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 637.76,460.0 L 637.76,280.0 L 651.96,288.2 L 651.96,468.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 651.96,468.2 L 651.96,288.2 L 666.16,280.0 L 666.16,460.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 651.96,271.8 L 637.76,280.0 L 651.96,288.2 L 666.16,280.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 516.52,470.0 L 516.52,425.0 L 530.72,433.2 L 530.72,478.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 530.72,478.2 L 530.72,433.2 L 544.92,425.0 L 544.92,470.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 530.72,416.8 L 516.52,425.0 L 530.72,433.2 L 544.92,425.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 551.16,470.0 L 551.16,440.0 L 565.36,448.2 L 565.36,478.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 565.36,478.2 L 565.36,448.2 L 579.56,440.0 L 579.56,470.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 565.36,431.8 L 551.16,440.0 L 565.36,448.2 L 579.56,440.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 585.8,470.0 L 585.8,455.0 L 600.0,463.2 L 600.0,478.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 600.0,478.2 L 600.0,463.2 L 614.2,455.0 L 614.2,470.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 600.0,446.8 L 585.8,455.0 L 600.0,463.2 L 614.2,455.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 533.84,480.0 L 533.84,405.0 L 548.04,413.2 L 548.04,488.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 548.04,488.2 L 548.04,413.2 L 562.24,405.0 L 562.24,480.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 548.04,396.8 L 533.84,405.0 L 548.04,413.2 L 562.24,405.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 568.48,480.0 L 568.48,360.0 L 582.68,368.2 L 582.68,488.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,488.2 L 582.68,368.2 L 596.88,360.0 L 596.88,480.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 582.68,351.8 L 568.48,360.0 L 582.68,368.2 L 596.88,360.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  <g>
+    <path class="building-face" d="M 551.16,490.0 L 551.16,475.0 L 565.36,483.2 L 565.36,498.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 565.36,498.2 L 565.36,483.2 L 579.56,475.0 L 579.56,490.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 565.36,466.8 L 551.16,475.0 L 565.36,483.2 L 579.56,475.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+  </g>
+  </g>
+  <g class="dashboard-text">
+    <text x="50" y="58" fill="#3B82F6" font-size="11" font-weight="800" letter-spacing="3px" opacity="0.4">GITHUB // SKYLINE</text>
+    <text x="50" y="96" fill="#8B5CF6" font-size="30" font-weight="900" letter-spacing="-0.5px">@DURGESH729</text>
+    <g transform="translate(50, 112)">
+      <rect x="0" y="0" width="80.0" height="20" rx="10" fill="#8B5CF6" fill-opacity="0.12" stroke="#8B5CF6" stroke-opacity="0.2" stroke-width="0.8" />
+      <text x="40.0" y="14" text-anchor="middle" fill="#8B5CF6" font-size="10" font-weight="700" letter-spacing="0.8px">2026</text>
+    </g>
+    <text x="1150" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">TOTAL CONTRIBUTIONS</text>
+    <text x="1150" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">143</text>
+    <text x="940" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">BUSIEST DAILY COUNT</text>
+    <text x="940" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">35 <tspan font-size="14" font-weight="700" opacity="0.5">MAX</tspan></text>
+    <text x="710" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">LONGEST STREAK</text>
+    <text x="710" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">23 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
+    <text x="500" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">CURRENT STREAK</text>
+    <text x="500" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">0 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
+    <text x="50" y="763" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">INTENSITY</text>
+    <text x="168" y="763" text-anchor="end" fill="#3B82F6" font-size="9" font-weight="700" letter-spacing="0.8px" opacity="0.4">LOW</text>
+    <rect x="180" y="754" width="120" height="9" rx="4.5" fill="url(#legend-gradient)" />
+    <rect x="180" y="754" width="120" height="9" rx="4.5" fill="none" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="0.8" />
+    <text x="312" y="763" fill="#3B82F6" font-size="9" font-weight="700" letter-spacing="0.8px" opacity="0.4">HIGH</text>
+    <line x1="50" y1="210.00000000000006" x2="1150" y2="210.00000000000006" stroke="#8B5CF6" stroke-opacity="0.08" stroke-width="0.8" stroke-dasharray="3,6" />
+  </g>
+
+</svg>

@@ -1,0 +1,25 @@
+# Credentials
+.env
+
+# Logs
+logs/*.log
+logs/
+
+# Python compiled files and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local cache data (raw GraphQL exports for offline dev)
+.cache/
+data/raw/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
