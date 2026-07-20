@@ -176,7 +176,7 @@
     <text x="940" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">BUSIEST DAILY COUNT</text>
     <text x="940" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">1 <tspan font-size="14" font-weight="700" opacity="0.5">MAX</tspan></text>
     <text x="710" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">LONGEST STREAK</text>
-    <text x="710" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">27 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
+    <text x="710" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">28 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
     <text x="500" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">CURRENT STREAK</text>
     <text x="500" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">0 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
     <text x="50" y="763" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">INTENSITY</text>
