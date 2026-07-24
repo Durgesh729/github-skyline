@@ -221,8 +221,8 @@
   <path d="M 565.36,498.2 L 565.36,504.95 L 579.56,496.75 L 579.56,490.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
   <path d="M 585.8,490.0 L 585.8,496.75 L 600.0,504.95 L 600.0,498.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
   <path d="M 600.0,498.2 L 600.0,504.95 L 614.2,496.75 L 614.2,490.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
-  <path d="M 620.44,490.0 L 620.44,530.5 L 634.64,538.7 L 634.64,498.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
-  <path d="M 634.64,498.2 L 634.64,538.7 L 648.84,530.5 L 648.84,490.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 620.44,490.0 L 620.44,537.25 L 634.64,545.45 L 634.64,498.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 634.64,498.2 L 634.64,545.45 L 648.84,537.25 L 648.84,490.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
   <path d="M 568.48,500.0 L 568.48,506.75 L 582.68,514.95 L 582.68,508.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
   <path d="M 582.68,508.2 L 582.68,514.95 L 596.88,506.75 L 596.88,500.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
   <!-- Ground Shadows -->
@@ -434,9 +434,9 @@
     <path class="building-face" d="M 600.0,466.8 L 585.8,475.0 L 600.0,483.2 L 614.2,475.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
   </g>
   <g>
-    <path class="building-face" d="M 620.44,490.0 L 620.44,400.0 L 634.64,408.2 L 634.64,498.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
-    <path class="building-face" d="M 634.64,498.2 L 634.64,408.2 L 648.84,400.0 L 648.84,490.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
-    <path class="building-face" d="M 634.64,391.8 L 620.44,400.0 L 634.64,408.2 L 648.84,400.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 620.44,490.0 L 620.44,385.0 L 634.64,393.2 L 634.64,498.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 634.64,498.2 L 634.64,393.2 L 648.84,385.0 L 648.84,490.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 634.64,376.8 L 620.44,385.0 L 634.64,393.2 L 648.84,385.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
   </g>
   <g>
     <path class="building-face" d="M 568.48,500.0 L 568.48,485.0 L 582.68,493.2 L 582.68,508.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
@@ -452,7 +452,7 @@
       <text x="40.0" y="14" text-anchor="middle" fill="#8B5CF6" font-size="10" font-weight="700" letter-spacing="0.8px">2026</text>
     </g>
     <text x="1150" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">TOTAL CONTRIBUTIONS</text>
-    <text x="1150" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">207</text>
+    <text x="1150" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">208</text>
     <text x="940" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">BUSIEST DAILY COUNT</text>
     <text x="940" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">35 <tspan font-size="14" font-weight="700" opacity="0.5">MAX</tspan></text>
     <text x="710" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">LONGEST STREAK</text>
