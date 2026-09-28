@@ -143,8 +143,8 @@
   <path d="M 392.15,378.2 L 392.15,384.95 L 406.36,376.75 L 406.36,370.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
   <path d="M 759.0,590.0 L 759.0,596.75 L 773.21,604.95 L 773.21,598.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
   <path d="M 773.21,598.2 L 773.21,604.95 L 787.41,596.75 L 787.41,590.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
-  <path d="M 1001.49,670.0 L 1001.49,676.75 L 1015.69,684.95 L 1015.69,678.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
-  <path d="M 1015.69,678.2 L 1015.69,684.95 L 1029.9,676.75 L 1029.9,670.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
+  <path d="M 1001.49,670.0 L 1001.49,683.5 L 1015.69,691.7 L 1015.69,678.2 Z" fill="url(#reflection-gradient-left)" opacity="0.4" />
+  <path d="M 1015.69,678.2 L 1015.69,691.7 L 1029.9,683.5 L 1029.9,670.0 Z" fill="url(#reflection-gradient-right)" opacity="0.4" />
   <!-- Ground Shadows -->
   <path d="M 392.15,364.8 L 377.95,373.0 L 392.15,381.2 L 406.36,373.0 Z M 773.21,584.8 L 759.0,593.0 L 773.21,601.2 L 787.41,593.0 Z M 1015.69,664.8 L 1001.49,673.0 L 1015.69,681.2 L 1029.9,673.0 Z" fill="#000000" filter="url(#ambient-shadow)" opacity="0.6" />
   <!-- Isometric Buildings -->
@@ -159,9 +159,9 @@
     <path class="building-face" d="M 773.21,566.8 L 759.0,575.0 L 773.21,583.2 L 787.41,575.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
   </g>
   <g>
-    <path class="building-face" d="M 1001.49,670.0 L 1001.49,655.0 L 1015.69,663.2 L 1015.69,678.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
-    <path class="building-face" d="M 1015.69,678.2 L 1015.69,663.2 L 1029.9,655.0 L 1029.9,670.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
-    <path class="building-face" d="M 1015.69,646.8 L 1001.49,655.0 L 1015.69,663.2 L 1029.9,655.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 1001.49,670.0 L 1001.49,640.0 L 1015.69,648.2 L 1015.69,678.2 Z" fill="url(#left-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 1015.69,678.2 L 1015.69,648.2 L 1029.9,640.0 L 1029.9,670.0 Z" fill="url(#right-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
+    <path class="building-face" d="M 1015.69,631.8 L 1001.49,640.0 L 1015.69,648.2 L 1029.9,640.0 Z" fill="url(#top-face-gradient)" stroke="#00F0FF" stroke-width="0.5" opacity="0.9" />
   </g>
   </g>
   <g class="dashboard-text">
@@ -172,11 +172,11 @@
       <text x="40.0" y="14" text-anchor="middle" fill="#8B5CF6" font-size="10" font-weight="700" letter-spacing="0.8px">2025</text>
     </g>
     <text x="1150" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">TOTAL CONTRIBUTIONS</text>
-    <text x="1150" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">3</text>
+    <text x="1150" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">4</text>
     <text x="940" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">BUSIEST DAILY COUNT</text>
-    <text x="940" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">1 <tspan font-size="14" font-weight="700" opacity="0.5">MAX</tspan></text>
+    <text x="940" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">2 <tspan font-size="14" font-weight="700" opacity="0.5">MAX</tspan></text>
     <text x="710" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">LONGEST STREAK</text>
-    <text x="710" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">97 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
+    <text x="710" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">98 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
     <text x="500" y="55" text-anchor="end" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">CURRENT STREAK</text>
     <text x="500" y="92" text-anchor="end" fill="#8B5CF6" font-size="32" font-weight="900" letter-spacing="-0.5px" class="code-text">0 <tspan font-size="14" font-weight="700" opacity="0.5">DAYS</tspan></text>
     <text x="50" y="763" fill="#3B82F6" font-size="10" font-weight="700" letter-spacing="1.5px" opacity="0.4">INTENSITY</text>
